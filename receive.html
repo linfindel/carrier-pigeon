@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrier Pigeon</title>
+
+  <link rel="stylesheet" href="https://linfindel.github.io/nadircss/nadir.css">
+</head>
+<body class="absolute-centre column-flat">
+  <div id="paste-card" class="card-flat-bottom column" style="width: calc(100% - 5rem);">
+    <input autocomplete="off" id="paste-input" type="text" placeholder="Paste text here" oninput="decode()">
+  </div>
+
+  <div id="download-card" class="card-subtle-flat-top column" style="width: calc(100% - 5rem);">
+    <button id="download-button" class="button-subtle" inert>
+      <span id="download-icon" class="material-symbols-rounded">download</span>
+      <span id="download-text">Download file</span>
+    </button>
+  </div>
+
+  <script src="receive.js"></script>
+</body>
+</html>

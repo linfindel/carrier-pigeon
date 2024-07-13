@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrier Pigeon</title>
+
+  <link rel="stylesheet" href="https://linfindel.github.io/nadircss/nadir.css">
+</head>
+<body class="absolute-centre column-flat">
+  <div id="upload-card" class="card-flat-bottom column" style="width: calc(100% - 5rem);">
+      <button id="upload-button" onclick="upload()">
+        <span id="upload-icon" class="material-symbols-rounded">upload</span>
+        <span id="upload-text">Upload file</span>
+      </button>
+  </div>
+
+  <div id="copy-card" class="card-subtle-flat-top column" style="width: calc(100% - 5rem);">
+    <button id="copy-button" class="button-subtle" inert>
+      <span id="copy-icon" class="material-symbols-rounded">content_copy</span>
+      <span id="copy-text">Copy text</span>
+    </button>
+  </div>
+
+  <script src="send.js"></script>
+</body>
+</html>
