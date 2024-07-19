@@ -34,5 +34,7 @@ function download(string) {
 
     document.getElementById("download-icon").innerText = "downloading";
     document.getElementById("download-text").innerText = "Downloading...";
+    
+    location.href = '.';
   }
 }
