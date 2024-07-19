@@ -1,4 +1,4 @@
-function upload() {
+function openFile() {
   let input = document.createElement('input');
   input.type = 'file';
 
@@ -17,14 +17,14 @@ function upload() {
 }
 
 function success(string) {
-  document.getElementById("upload-card").classList.remove("card-flat-bottom");
-  document.getElementById("upload-card").classList.add("card-success-flat-bottom");
+  document.getElementById("open-card").classList.remove("card-flat-bottom");
+  document.getElementById("open-card").classList.add("card-success-flat-bottom");
 
-  document.getElementById("upload-button").classList.add("button-success");
-  document.getElementById("upload-button").inert = "true";
+  document.getElementById("open-button").classList.add("button-success");
+  document.getElementById("open-button").inert = "true";
 
-  document.getElementById("upload-icon").innerText = "check";
-  document.getElementById("upload-text").innerText = "File uploaded";
+  document.getElementById("open-icon").innerText = "check";
+  document.getElementById("open-text").innerText = "File opened";
 
   document.getElementById("copy-card").classList.remove("card-subtle-flat-top");
   document.getElementById("copy-card").classList.add("card-flat-top");
